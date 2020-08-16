@@ -1,0 +1,14 @@
+{
+    "name": "Roulette",
+    "slug": "Roulette_arckene__208645946",
+    "version": "1.0.0",
+    "id": "208645946",
+    "author": [
+        "Arckene"
+    ],
+    "description": "A simple Plugin of Roulette Game for TrixCMS",
+    "aliases": "roulette_arckene",
+    "providers": [
+        "Extensions\\Plugins\\Roulette_arckene__208645946\\Providers\\RouletteServiceProvider"
+    ]
+}
