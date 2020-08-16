@@ -1,3 +1,6 @@
+$('.histoop').paginate(paginate);
+
+
 /**
  * Get actual rotate of the spinning machine
  * @param obj the spinning machine
@@ -127,11 +130,26 @@ button.append( "circle" ).attr( "cx", 0 ).attr( "cy", 0 ).attr( "r", 80 );
  * END OF SHITI CODE
  */
 
+/**
+ * VERIFICATION LOGIN AND POINT
+ */
+if(verifLogin) {
+    if (!verifPoint) {
+        button.on("click", null);
+        $('#roulette').addClass('desactived');
+        $('.chartholder g').removeClass('rotate');
+    }
+} else {
+    button.on("click", null);
+    $('#roulette').addClass('desactived');
+    $('.chartholder g').removeClass('rotate');
+}
 
 addButtonText( LangPlayTitle, LangPlayText );
 
 button.on("click", spin);
 let isSpinning = false;
+
 
 /**
  * Spining function for spin the function
